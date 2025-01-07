@@ -1,0 +1,26 @@
+[project]
+name = "polars-dt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">3.10"
+dependencies = [
+    #"polars==1.16.0",
+    #"polars==1.16.0",
+    "polars==1.17.0",
+]
+
+
+[dependency-groups]
+dev = [
+    "ipython>=8.31.0",
+    "pytest-benchmark[histogram]>=5.1.0",
+    "ruff>=0.8.6",
+]
+
+[tool.pytest.ini_options]
+addopts = ""
+minversion = "8.0"
+pythonpath = ["py_src", "py_tests"]
+testpaths = "py_tests"
+#pythonfiles = "test_*.py"
